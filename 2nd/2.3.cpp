@@ -12,10 +12,15 @@ int main()
 	     << "\nnum % 2 == " << num % 2
 	     << "\nnum++ == " << num++
 	     << "\nnum-- == " << num--
-	    //? << "\nnum += 1 == " << num += 1
+	    //?<< "\nnum += 1 == " << num += 1
     	    //? << "\nnum -= 1 == " << num -= 1
 	    //? << "\nnum *= num == " << num *= num
 	    //? << "\nnum /= 2 == " << num /= 2
 	    //? << "\nnum %= 2 == " << num /= 2
-	     << "\n";	     
+	     << "\n";
+	string str = "smth";
+	cout << "str  + smth == " << str + "smth" << "\n";
+	string str2 = "qwerty";
+	cout << "str + str2 == " << str + str2 << "\n";
+	
 }

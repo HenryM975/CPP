@@ -24,6 +24,20 @@ int main()
 		{
 		cout << "Дорогая " << recipient_name << "\n Это " << sender_name<< ", как дела?\n Тебе исполнилось " << recipient_age << "\n";
 		}
+		cout << " В следующем году тебе уже " << recipient_age + 1;
+		if(recipient_age == 17)
+		{
+			cout << ", уже можно будет голосовать\n";
+		}
+		else if(recipient_age >= 80)
+		{
+			cout << ", не скучаешь на пенсии?\n";
+		}
+		else
+		{
+			cout << ", стареешь)\n";
+		}
+		cout << "C наилучшими, " << sender_name << "\n";
 	}
 	else
 	{

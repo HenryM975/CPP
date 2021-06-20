@@ -2,46 +2,62 @@
 int main()
 {
 	int current;
-	int mass[20];
+	cout << "Введите число обрабатываемых значений:\n";
+	int mass_len;
+	cin >> mass_len;
+	int mass[mass_len];
 	int i = 0;
-	while (cin >> current && current != 0)
+	cout << "Введите значения через enter:\n";
+	while (current != 0 && i <  mass_len)
 	{
+		cin >> current;
 		mass[i] = current;
 		i++;
 	}
 	cout << "------------------------\n";
-	int j = 0;
-	int coin_1 = 5, coin1_sum = 0;
-	
-	while(i != j)
+	int real_len = 0, temporary_part = 0, temporary_part2 = 0, p = 0;
+	while(p != i)
 	{
-		cout << mass[j] << "\n";
-		if(mass[j] == coin_1)
-			coin1_sum++;
-		j++;
-		
+		temporary_part = mass[p];
+		if(temporary_part != temporary_part2)
+			real_len++;
+		temporary_part2 = temporary_part;
+		p++;	
+
+
 	}
-	cout << "------------------------\n";
-	cout << "coin1_sum == " << coin1_sum << "\n";
-	/*
+	cout << "\n real_len == " << real_len << "\n\n"; 
+
+
 	int k  = 0;
 	int part = 0;
-	while(k != i)
-	{
+	int no_repeat_list[real_len];
+	while(k != real_len)
+	{	
 		part = mass[k];
+		for(int m = 0; m < mass_len; m++)
+		{
+			if(part == no_repeat_list[m])
+                                {
+					k++;
+					m = mass_len;
+
+				}
+
+		}
 		int l = 0;
 		int part_frequency = 0;
-		int no_repeat_list[20]; //исключить повторение в корневом цикле + установить выбор числа монет для определения размера массива на старте
 		while(l != i)
 		{
 			if(part == mass[l])
-				part_frequency++
+				part_frequency++;
 
 				
 			l++;
 		}
-		cout << mass[k] << " - " << part_frequency << "\n";
-		k++
-	}*/
+		cout << part  << " - " << part_frequency << "\n";
+		no_repeat_list[k] = part;
+		k++;
+	}
 	
 }

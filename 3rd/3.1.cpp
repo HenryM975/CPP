@@ -1,9 +1,7 @@
 #include "../include/std_lib_facilities.h"
 int main()
 {
-	constexpr double rub_dollar = 73.06;
-	constexpr double uan_dollar = 6.44;
-	constexpr double gri_dollar = 27.27;
+	constexpr double rub_dollar = 73.06, uan_dollar = 6.44, gri_dollar = 27.27;
 	cout << "Введите сумму и валюту(r(рубли)/u(юань)/g(гривна)):\n";
 	int sum = 0;
 	char currency;

@@ -78,7 +78,11 @@ int main()
 
 		cout << "sum == " << sum << "m " << sum_of_elements << " elements max == " << full_vec_m[sum_of_elements - 1] <<  "m  min == " << full_vec_m[0] << "m\n";
 	
-		//cout << len << unit << "\n";
+		
 	}
+	cout << "values:\n";
+		for(int i = 0; i < sum_of_elements; ++i)
+			cout << full_vec_m[i] << " ";
+	cout << "\n";
 
 }

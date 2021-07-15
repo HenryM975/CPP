@@ -166,6 +166,161 @@ int main()
 			else if(answer == 'n')
 			{
 				//76 - 88
+				cout << "Число больше 82?(y/n)\n";
+				cin >> answer;
+				if(answer == 'y')
+				{
+					//83 - 88
+					cout << "Число больше 85?(y/n)\n";
+					cin >> answer;
+					if(answer == 'y')
+					{
+						//86 - 88
+						cout << "Число больше 87?(y/n)\n";
+						cin >> answer;
+						if(answer == 'y')
+						{
+							//88!
+							cout << "Число 88!\n";
+						}
+						else if(answer == 'n')
+						{
+							//86 - 87
+							cout << "Число больше 86?(y/n)\n";
+							cin >> answer;
+							if(answer == 'y')
+							{
+								//87!
+								cout << "Число 87!\n";
+							}
+							else if(answer == 'n')
+							{
+								//86!
+								cout << "Число 86!\n";
+							}
+
+						}
+						else
+							cout << "Error\n";
+					}
+					if(answer == 'n')
+					{
+						//83 - 85
+						cout << "Число болше 84?(y/n)\n";
+						cin >> answer;
+						if(answer == 'y')
+						{
+							//85!
+							cout << "Число 85!\n";
+						}
+						else if(answer == 'n')
+						{
+							//83 - 84
+							cout << "Число больше 83?(y/n)\n";
+							cin >> answer;
+							if(answer == 'y')
+							{
+								//84!
+								cout << "Число 84!\n";
+							}
+							else if(answer == 'n')
+							{
+								//83!
+								cout << "Число 83!\n";
+							}
+							else
+								cout << "Error\n";
+						}
+						else
+							cout << "Error\n";
+					}
+					else
+						cout << "Error\n";
+				}
+				else if(answer == 'n')
+				{
+					//76 - 82
+					cout << "Число больше 79?(y/n)\n";
+					cin >> answer;
+					if(answer == 'y')
+					{
+						//80 - 82
+						cout << "Число больше 81?(y/n)\n";
+						cin >> answer;
+						if(answer == 'y')
+						{
+							//82!
+							cout << "Число 82!\n";
+						}
+						else if(answer == 'n')
+						{
+							//80 - 81
+							cout << "Число больше 80?(y/n)\n";
+							cin >> answer;
+							if(answer == 'y')
+							{
+								//81!
+								cout << "Число 81!\n";
+							}
+							else if(answer == 'n')
+							{
+								//80!
+								cout << "Число 80!\n";
+							}
+							else
+								cout << "Error\n";
+						}
+						else
+							cout << "Error\n";
+					}
+					else if(answer == 'n')
+					{
+						//76 - 79
+						cout << "Число больше 77?(y/n)\n";
+						cin >> answer;
+						if(answer == 'y')
+						{
+							//78 - 79
+							cout << "Число больше 78?(y/n)\n";
+							cin >> answer;
+							if(answer == 'y')
+							{
+								//79!
+								cout << "Число 79!\n";
+							}
+							else if(answer == 'n')
+							{
+								//78!
+								cout << "Число 78!\n";
+							}
+							else
+								cout << "Error\n";
+
+						}
+						else if(answer == 'n')
+						{
+							//76 - 77
+							cout << "Число больше 76?(y/n)\n";
+							cin >> answer;
+							if(answer == 'y')
+							{
+								//77!
+								cout << "Число 77!\n";
+							}
+							else if(answer == 'n')
+							{
+								//76!
+								cout << "Число 76!\n";
+							}
+						}
+						else
+							cout << "Error\n";
+					}
+					else 
+						cout << "Error\n";
+				}
+				else
+					cout << "Error\n";
 			}
 		}
 		else if(answer == 'n')

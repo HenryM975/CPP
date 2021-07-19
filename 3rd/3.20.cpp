@@ -10,7 +10,7 @@ int main()
 		vector<string> vec = {"zero", "one", "two", "three", "four","five", "six", "seven", "eight", "nine", "ten"};
 		string number1, number2;
 		char oper;
-		double number1_result, number2_result;
+		double number1_result = -1.0, number2_result = -1.0;
 		cout << "Введите 2 числа в буквенном виде и операцию (+-*/)\n";
 		while(cin >> number1 >> number2 >> oper)
 		{
@@ -19,13 +19,28 @@ int main()
 			{
 				if(number1 == vec[i])
 				{
-					//...
+					number1_result = i;
 				}
 				if(number2 == vec[i])
 				{
-					//...
+					number2_result = i;
 				}
-			}	
+			}
+			if(number1_result == -1.0 || number2_result == -1.0)
+				cout << "Error\n";	
+			
+			if (oper == '+')
+                        cout << number1_result << " + " << number2_result << " == " << number1_result + number2_result << "\n";
+                else if(oper == '-')
+                        cout << number1_result << " - " << number2_result << " == " << number1_result - number2_result << "\n";
+                else if(oper == '*')
+                        cout << number1_result << " * " << number2_result << " == " << number1_result * number2_result << "\n";
+                else if(oper == '/')
+                        cout << number1_result << " / " << number2_result << " == " << number1_result / number2_result << "\n";
+                else
+                        cout << "Error\n";
+			
+
 		}
 			
 

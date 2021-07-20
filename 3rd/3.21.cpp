@@ -10,11 +10,11 @@ int main()
 	unsigned long long int  num = 1;  //int
 	int i = 0;
 	vector <unsigned long long int> vec;
-	for(; i < 64; ++i)
+	for(; num < limit; num*= 2)
 	{
-		num *= 2;
-		/*if(num >= limit)
-			cout << "Limit!\n";*/
+		++i;
+		if(num >= limit)
+			cout << "Limit!\n";
 		vec.push_back(num);
 		cout << i << " - " <<  num <<"\n";
 		for(int j = 0; j < i; j++)

@@ -11,8 +11,6 @@ int main()
 	int input_data, rand_value = rand() % 3;
 	cout << "Введите значение: Камень - 1, Ножницы - 2 или Бумага - 3 ctrl+c для завершения\n";
 	cin >> input_data;
-	if(input_data == 1 || input_data == 2 || input_data == 3)
-	{
 		switch(input_data)
 		{	
 			//Камень
@@ -66,12 +64,9 @@ int main()
                                 }		
 			break;
 			default:
-				cout << "error";
+				cout << "Error";
 		}
 
-	}
-	else
-		cout << "Error";
 	
 
 	}

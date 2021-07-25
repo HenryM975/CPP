@@ -580,6 +580,19 @@ int main()
 				else if(answer == 'n')
 				{
 					//51-56
+					cout << "Число больше 53?\n";
+					cin >> answer;
+					if(answer == 'y')
+					{
+						//54 - 56
+					}
+					else if(answer == 'n')
+					{
+						//51 - 53
+					}
+					else
+						cout<< "Error\n";
+
 				}
 				else
 					cout << "Error\n";

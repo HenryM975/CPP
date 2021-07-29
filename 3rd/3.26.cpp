@@ -12,13 +12,23 @@ for(int i = 0; i < limit; ++i)
 	cout << i << " ";
 }
 //vec.erase(vec.begin() + 1)
-/*for(int i = 0; i < limit; ++i)
+cout << "\n -------------------------------- \n";
+int del_sum = 0;
+for(int i = 1; i < limit; i++)
 {
 	if(i % 2 == 0)
-		values.erase(values.begin());
-}*/
-values.erase(values.cbegin() + 1);
-for(int i = 0; i < limit - 1; ++i)
+	{
+		values.erase(values.begin() + i);
+		++del_sum;
+	}
+	else
+	{
+		cout << "*\n";
+	}
+}
+//cout << " - " << values.cbegin() << " - ";
+//values.erase(values.cbegin()); ?????????????
+for(int i = 0; i < limit - del_sum; ++i)
 {
 	cout << values[i];
 }

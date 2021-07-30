@@ -4,6 +4,8 @@ int main()
 {
 int limit;
 vector <int> values;
+vector <int> deletion;
+vector <int> result;
 cout << "Введите крайнее значение:\n";
 cin >> limit;
 for(int i = 0; i < limit; ++i)
@@ -11,26 +13,16 @@ for(int i = 0; i < limit; ++i)
 	values.push_back(i);
 	cout << i << " ";
 }
-//vec.erase(vec.begin() + 1)
-cout << "\n -------------------------------- \n";
-int del_sum = 0;
-for(int i = 1; i < limit; i++)
-{
-	if(i % 2 == 0)
+	for(int i = 2; i < limit; ++i)
 	{
-		values.erase(values.begin() + i);
-		++del_sum;
+		for(int j = 0; j < deletion.size(); ++j)
+		{
+			if(j == deletion.size())
+			{
+				values[i] //??????
+			}
+
+		}
 	}
-	else
-	{
-		cout << "*\n";
-	}
-}
-//cout << " - " << values.cbegin() << " - ";
-//values.erase(values.cbegin()); ?????????????
-for(int i = 0; i < limit - del_sum; ++i)
-{
-	cout << values[i];
-}
 }
 	

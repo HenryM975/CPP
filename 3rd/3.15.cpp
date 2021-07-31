@@ -585,6 +585,33 @@ int main()
 					if(answer == 'y')
 					{
 						//54 - 56
+						cout << "Число больше 55?\n";
+						cin >> answer;
+						if(answer == 'y')
+						{
+							//56!
+							cout << "Число 56!\n";
+						}
+						else if(answer == 'n')
+						{
+							//54-55
+							cout << "Число больше 54?\n";
+							cin >> answer;
+							if(answer == 'y')
+							{
+								//55!
+								cout << "Число 55!\n";
+							}
+							else if(answer == 'n')
+							{
+								//54!
+								cout << "Число 54!\n";
+							}
+							else
+								cout << "Error\n";
+						}
+						else
+							cout << "Error\n";
 					}
 					else if(answer == 'n')
 					{

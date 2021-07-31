@@ -4,25 +4,21 @@ int main()
 {
 int limit;
 vector <int> values;
-vector <int> deletion;
-vector <int> result;
 cout << "Введите крайнее значение:\n";
 cin >> limit;
-for(int i = 0; i < limit; ++i)
-{
-	values.push_back(i);
-	cout << i << " ";
-}
-	for(int i = 2; i < limit; ++i)
+for(int i = 0; i < limit + 1; i++)
 	{
-		for(int j = 0; j < deletion.size(); ++j)
+		values[i] = i;
+	}
+for(int p = 2; p < limit + 1; p++)
+	{
+		if (values[p] != 0)
 		{
-			if(j == deletion.size())
-			{
-				values[i] //??????
-			}
-
+			cout << values[p];
+			for(int j = p * p; j < limit + 1; j += p)
+				values[j] = 0;
 		}
 	}
-}
-	
+
+
+}	

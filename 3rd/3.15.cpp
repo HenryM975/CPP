@@ -777,6 +777,33 @@ int main()
 						else if(answer == 'n')
 						{
 							//39 - 41
+							cout << "Число больше 40?(y/n)\n";
+							cin >> answer;
+							if(answer = 'y')
+							{
+								//41!
+								cout << "Число 41!\n";
+							}
+							else if(answer == 'n')
+							{
+								//39 - 40
+								cout << "Число больше 39?(y/n)\n";
+								cin >> answer;
+								if(answer == 'y')
+								{
+									//40!
+									cout << "Число 40!\n";
+								}
+								else if(answer == 'n')
+								{
+									//39!
+									cout << "Число 39!\n";
+								}
+								else
+									cout << "Error\n";
+							}
+							else
+								cout << "Error\n";
 						}
 						else
 							cout << "Error\n";

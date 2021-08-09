@@ -12,8 +12,11 @@ for(int i = 0; i < limit + 1; i++)
                 values.push_back(i);
         }
 
+int p = 2;
+//while(vector.size != sum of nums)
 for(int p = 2; p < limit + 1; p++)
         {
+		++p;
                 if (values[p] != 0)
                 {
                         cout << values[p] << " ";

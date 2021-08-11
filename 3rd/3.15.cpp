@@ -814,6 +814,28 @@ int main()
 				else if(answer == 'n')
 				{
 					//26 - 38
+					cout << "Число больше 31?(y/n)\n";
+					cin >> answer;
+					if(answer == 'y')
+					{
+						//32 - 38
+						cout << "Число больше 35?(y/n)\n";
+						cin >> answer;
+						if(answer == 'y')
+						{
+						}
+						else if(answer == 'n')
+						{
+						}
+						else
+							cout << "Error\n";
+					}
+					else if(answer == 'n')
+					{
+						//26 - 31
+					}
+					else
+						cout << "Error\n";
 				}
 				else
 					cout << "Error\n";

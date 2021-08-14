@@ -824,7 +824,7 @@ int main()
 						if(answer == 'y')
 						{
 							//36 - 38
-							cout << "Число больше 37?(y/n)\n"
+							cout << "Число больше 37?(y/n)\n";
 							cin >> answer;
 							if(answer == 'y')
 							{
@@ -994,7 +994,7 @@ int main()
 						if(answer == 'y')
 						{
 							//23 - 25
-							cout << "Число больше 24?(y/n)\n"
+							cout << "Число больше 24?(y/n)\n";
 							cin >> answer;
 							if(answer == 'y')
 							{
@@ -1060,14 +1060,14 @@ int main()
 					else if(answer == 'n')
 					{
 						//14 - 19
-						cout << "Число больше 16?(y/n)\n"
+						cout << "Число больше 16?(y/n)\n";
 						cin >> answer;
 						if(answer == 'y')
 						{
 							//17 - 19
 							cout << "Число больше 18?(y/n)\n";
 							cin >> answer;
-							if(answe == 'y')
+							if(answer == 'y')
 							{
 								//19!
 								cout << "Число 19!\n";
@@ -1097,7 +1097,7 @@ int main()
 						{
 							//14 - 16
 							cout << "Число больше 15?(y/n)\n";
-							cin >> answer
+							cin >> answer;
 							if(answer == 'y')
 							{
 								//16!
@@ -1126,7 +1126,7 @@ int main()
 								cout << "Error\n";
 						}
 						else
-							cout << "Error\n"
+							cout << "Error\n";
 					}
 					else
 						cout << "Error\n";
@@ -1140,7 +1140,7 @@ int main()
 					{
 						//8 - 13
 						cout << "Число больше 10?(y/n)\n";
-						cin >> answer
+						cin >> answer;
 						if(answer == 'y')
 						{
 							//11 - 13
@@ -1215,7 +1215,7 @@ int main()
 						{
 							//5 - 7
 							cout << "Число больше 6?(y/n)\n";
-							cin >> answer
+							cin >> answer;
 							if(answer == 'y')
 							{
 								//7!

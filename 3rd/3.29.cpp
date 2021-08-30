@@ -4,15 +4,15 @@ int main()
 {
 	vector <int> vec;
 	int i = 0;
-	string data;
-	cin >> data;
-	while(data != "q")
+	string values;
+	cin >> values;
+	while(values != "q")
 	{
-		vec.push_back(stoi(data));
+		vec.push_back(stoi(values));
 		++i;
-		cin >> data;
+		cin >> values;
 	}
-	
-	cout << "min == " << vec[0] << " max == " << vec[i-1];
+	sort(vec);
+	cout << "min == " << vec[0] << " max == " << vec[i-1] << "\n";
 
 }

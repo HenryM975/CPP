@@ -11,8 +11,19 @@ int main()
 {
 	double c = 0.0;
 	cin >> c;
-	double k = ctok(c);
-	cout << k << '\n';
+	if(c <= -273.15)
+		{
+			cout << "Температура не может быть ниже 0K\n";
+		}
+	else if (c > -273.15)
+		{
+			double k = ctok(c);
+			cout << k << '\n';
+		}
+	else
+		{
+			cout << "ERROR\n";
+		}
 
 	return 0;
 }

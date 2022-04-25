@@ -1,5 +1,6 @@
-//ex2p214
-//kelvin to celsius
+//ex5p214
+//draft
+//celsius to fahrenheit
 #include "../include/std_lib_facilities.h"
 
 double ctof(double c)

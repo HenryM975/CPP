@@ -1,4 +1,4 @@
-//ex5p214
+//ex6p214
 //draft
 //celsius to fahrenheit
 #include "../include/std_lib_facilities.h"

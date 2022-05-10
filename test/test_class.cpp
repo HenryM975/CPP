@@ -27,6 +27,12 @@ int main()
 
 
 	std::cout << t[0].num1 << "|" << t[0].num2 << "|" << t[1].num1 <<  "|" << t[1].num2 << std::endl;
+	
+	TestClass* pT;
+	TestClass* pClass1;
+	pClass1 = &Class1;
+
+	std::cout << pT << "|" << pClass1 << "|" << ++pClass1 << "|" << pClass1->num1 << "|" << pClass1->num2 << std::endl;
 
 
 
